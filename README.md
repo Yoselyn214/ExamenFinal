@@ -1,3 +1,6 @@
+Integrantes:
+- Sebastian Tenorio
+- Yoselyn Miranda
 # ExamenFinal
 
 ## Pregunta 3 (5 puntos)

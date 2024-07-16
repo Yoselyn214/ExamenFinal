@@ -71,6 +71,9 @@ def realizar_transaccion(origen, destino, valor):
   if int(cuenta.saldo) <= valor:
     print("No hay saldo suficiente")
     return
+  if origen == destino:
+    print("No se puede realizar la transacción")
+    return
   
   x = datetime.datetime.now()
   fecha = x.strftime("%d/%m/%Y %H:%M:%S")

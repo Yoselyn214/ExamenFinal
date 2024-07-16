@@ -67,6 +67,11 @@ def init_cuentas():
       f.write(BD[i].toStr()+"\n")
 
 def realizar_transaccion(origen, destino, valor):
+  cuenta = findCuenta_by_numero(origen)
+  if int(cuenta.saldo) <= valor:
+    print("No hay saldo suficiente")
+    return
+  
   x = datetime.datetime.now()
   fecha = x.strftime("%d/%m/%Y %H:%M:%S")
   operacion = Operacion(origen, destino, valor, fecha)
@@ -83,6 +88,8 @@ def historial_transacciones(origen):
       arr = str(line).split("|")
       if str(arr[0]) == str(origen):
         print("Origen: " + str(arr[0]) + " Destino: " + str(arr[1]) + " Valor: " + str(arr[2]) + " Fecha: " + str(arr[3]))
+
+# Pruebas
 
 init_cuentas()
 realizar_transaccion(12345678, 98764321, 500)

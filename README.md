@@ -17,11 +17,11 @@ Se agregaría una variable llamada Máximo_transferencia que estaria sumando los
 
   | Test Case                           | Precondition                         | Test Steps                                                        | Test Data                      | Expected Result                                         |
 |-------------------------------------|--------------------------------------|-------------------------------------------------------------------|-------------------------------|---------------------------------------------------------|
-| Verificar que no se pase la transferencia por dia| Se debe ingresar la data para el test. | Una vez ingresado la data se llamará a la función transferencia |data =["Juana",500]| ,  Limite de transferencia pasado por dia, devuelve monto de transferencia acumulado|
+| Verificar que no se pase la transferencia por dia| Se debe ingresar la data para el test. | Una vez ingresado la data se llamará a la función transferencia |data =[["Juana",500],["Rosa",600]]| ,  Limite de transferencia pasado por dia, devuelve monto de transferencia acumulado|
 
 ### Los casos de prueba existentes garantizan que no se introduzcan errores en la funcionalidad existente?
 
-Si, ya que en las transferencias se toma en consideración el saldo del usuario, que el contacto a quien se transfiera debe ser contacto del usuario y en agregar nuevo contacto se toma en consideración de que el usuario exista y que no este en la lista de contactos antes de agregarlo.
+No en todos los casos por ejemplo no hicimos una prueba que tomara en consideración si el usuario a quien se transfirio pertenecia a la lista de contactos, pero si tenemos que se verifique que el saldo tenga que ser suficiente antes de hacer transferencias.
 
 
 

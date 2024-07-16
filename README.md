@@ -21,7 +21,7 @@ Se agregaría una variable llamada Máximo_transferencia que estaria sumando los
 
 ### Los casos de prueba existentes garantizan que no se introduzcan errores en la funcionalidad existente?
 
-No en todos los casos por ejemplo no hicimos una prueba que tomara en consideración si el usuario a quien se transfirio pertenecia a la lista de contactos, pero si tenemos que se verifique que el saldo tenga que ser suficiente antes de hacer transferencias.
+No en todos los casos por ejemplo no hicimos una prueba que tomara en consideración si el usuario a quien se transfirio pertenecia a la lista de contactos, pero si tenemos que se verifique que el saldo tenga que ser suficiente antes de hacer transferencias, tambien de que no te puedes transfirir a ti mismo.
 
 
 
